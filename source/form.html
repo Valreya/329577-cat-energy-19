@@ -16,7 +16,7 @@
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="header-logo__link" srcset="img/logo-mobile.svg" alt="logo" width="191" height="54">
+              <img class="header__link" srcset="img/logo-mobile.svg" alt="logo" width="191" height="54">
             </picture>
           </a>
         </div>
@@ -35,56 +35,56 @@
           <p class="program__prolog">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <div class="program__general">
             <fieldset class="program__main">
-              <div class="field__row field__row--name">
-                <label class="field__label required" for="cat-name">Имя:</label>
-                <input class="field__input field__input--box" type="text" placeholder="Барсик" id="cat-name" name="cat-name" required="">
+              <div class="program__row program__row--name">
+                <label class="program__label required" for="cat-name">Имя:</label>
+                <input class="program__input program__input--box" type="text" placeholder="Барсик" id="cat-name" name="cat-name" required="">
               </div>
-              <div class="field__row field__row--weigth">
-                <label class="field__label required" for="cat-weight">Вес (кг):</label>
-                <input class="field__input field__input--box" type="number" placeholder="7" id="cat-weight" name="cat-weight" required="">
+              <div class="program__row program__row--weigth">
+                <label class="program__label required" for="cat-weight">Вес (кг):</label>
+                <input class="program__input program__input--box" type="number" placeholder="7" id="cat-weight" name="cat-weight" required="">
               </div>
-              <div class="field__row field__row--age">
-                <label class="field__label" for="cat-age">Возраст (лет):</label>
-                <input class="field__input field__input--box" type="number" placeholder="7" id="cat-age" name="cat-age">
+              <div class="program__row program__row--age">
+                <label class="program__label" for="cat-age">Возраст (лет):</label>
+                <input class="program__input program__input--box" type="number" placeholder="7" id="cat-age" name="cat-age">
               </div>
             </fieldset>
             <fieldset class="program__type">
-              <input class="field__input program__radio" type="radio" name="program-type" id="weight-loss" value="weight-loss" checked="">
-               <label class="field__label program__radio-label" for="weight-loss">Похудение</label>
-               <input class="field__input program__radio" type="radio" name="program-type" id="weight-plus" value="weight-plus">
-               <label class="field__label program__radio-label" for="weight-plus">Набор массы</label>
-               <input class="field__input program__radio" type="radio" name="program-type" id="need-help" value="need-help" disabled="">
-               <label class="field__label program__radio-label" for="need-help">Не знаю (нужен ваш совет)</label>
+              <input class="program__input program__radio" type="radio" name="program-type" id="weight-loss" value="weight-loss" checked="">
+               <label class="program__label program__radio-label" for="weight-loss">Похудение</label>
+               <input class="program__input program__radio" type="radio" name="program-type" id="weight-plus" value="weight-plus">
+               <label class="program__label program__radio-label" for="weight-plus">Набор массы</label>
+               <input class="program__input program__radio" type="radio" name="program-type" id="need-help" value="need-help" disabled="">
+               <label class="program__label program__radio-label" for="need-help">Не знаю (нужен ваш совет)</label>
             </fieldset>
           </div>
-          <fieldset class="program__contacts field">
-            <legend class="field__legend program__subtitle">Контактные данные (владельца кота)</legend>
+          <fieldset class="program__contacts">
+            <legend class="program__legend program__subtitle">Контактные данные (владельца кота)</legend>
             <div class="program__contacts-wrapper">
-              <div class="field__row email">
-                <label class="field__label email__label required" for="email">E-mail:</label>
-                <input class="field__input email__input field__input--box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
+              <div class="program__row email">
+                <label class="program__label email__label required" for="email">E-mail:</label>
+                <input class="program__input email__input program__input--box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
               </div>
-              <div class="field__row phone">
-                <label class="field__label phone__label required" for="tel">Телефон:</label>
-                <input class="field__input phone__input field__input--box" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required="">
+              <div class="program__row phone">
+                <label class="program__label phone__label required" for="tel">Телефон:</label>
+                <input class="program__input phone__input program__input--box" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required="">
               </div>
             </div>
           </fieldset>
-          <fieldset class="program__comment field">
-            <legend class="field__legend program__subtitle">Комментарий</legend>
-            <textarea class="field__input program__comment-area field__input--box" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="program__comment">
+            <legend class="program__legend program__subtitle">Комментарий</legend>
+            <textarea class="program__input program__comment-area program__input--box" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="program__additional additional field">
-            <legend class="field__legend program__subtitle">Дополнительно</legend>
+          <fieldset class="program__additional additional">
+            <legend class="program__legend program__subtitle">Дополнительно</legend>
             <div class="program__wrapper">
-              <input class="field__input additional__input" type="checkbox" name="sweetener" id="sweetener">
-               <label class="field__label additional__label" for="sweetener">Сахарозаменитель</label>
-               <input class="field__input additional__input" type="checkbox" name="water" id="water">
-               <label class="field__label additional__label" for="water">Питьевая вода</label>
-               <input class="field__input additional__input" type="checkbox" name="milk" id="milk" disabled="">
-               <label class="field__label additional__label" for="milk">Молоко</label>
-               <input class="field__input additional__input" type="checkbox" name="vitamins" id="vitamins">
-               <label class="field__label additional__label" for="vitamins">Витамины</label>
+              <input class="program__input additional__input" type="checkbox" name="sweetener" id="sweetener">
+               <label class="program__label additional__label" for="sweetener">Сахарозаменитель</label>
+               <input class="program__input additional__input" type="checkbox" name="water" id="water">
+               <label class="program__label additional__label" for="water">Питьевая вода</label>
+               <input class="program__input additional__input" type="checkbox" name="milk" id="milk" disabled="">
+               <label class="program__label additional__label" for="milk">Молоко</label>
+               <input class="program__input additional__input" type="checkbox" name="vitamins" id="vitamins">
+               <label class="program__label additional__label" for="vitamins">Витамины</label>
             </div>
           </fieldset>
           <div class="required-note">* &mdash; Обязательные поля</div>
@@ -124,10 +124,10 @@
               </picture> 
             </a>
             <a href="https://www.facebook.com/htmlacademy" class="social__link">
-              <picture class="social__link--facebook>
+              <picture class="social__link--facebook">
                 <source media="(min-width: 1300px)" srcset="img/icon-fb.svg">
                 <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
-                <img class="footer-logo__link" src="img/icon-fb-mobile.svg" alt="fb" width="14" height="28">
+                <img class="footer__link" src="img/icon-fb-mobile.svg" alt="fb" width="14" height="28">
               </picture>
             </a>
           </div>
@@ -137,7 +137,7 @@
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/htmlacademy.svg">
                 <source media="(min-width: 768px)" srcset="img/htmlacademy.svg">
-                <img class="footer-logo__link" src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34">
+                <img class="footer__producer__link" src="img/htmlacademy.svg" alt="htmlacademy" width="27" height="34">
               </picture>
             </a>
           </div>
